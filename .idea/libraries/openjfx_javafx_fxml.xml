@@ -1,7 +1,9 @@
 <component name="libraryTable">
-  <library name="openjfx.javafx.controls" type="repository">
-    <properties maven-id="org.openjfx:javafx-controls:22" />
+  <library name="openjfx.javafx.fxml" type="repository">
+    <properties maven-id="org.openjfx:javafx-fxml:22" />
     <CLASSES>
+      <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-fxml/22/javafx-fxml-22.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-fxml/22/javafx-fxml-22-win.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-controls/22/javafx-controls-22.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-controls/22/javafx-controls-22-win.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-graphics/22/javafx-graphics-22.jar!/" />
@@ -10,6 +12,8 @@
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-base/22/javafx-base-22-win.jar!/" />
     </CLASSES>
     <JAVADOC>
+      <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-fxml/22/javafx-fxml-22-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-fxml/22/javafx-fxml-22-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-controls/22/javafx-controls-22-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-controls/22/javafx-controls-22-javadoc.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-graphics/22/javafx-graphics-22-javadoc.jar!/" />
@@ -18,6 +22,8 @@
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-base/22/javafx-base-22-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-fxml/22/javafx-fxml-22-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-fxml/22/javafx-fxml-22-sources.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-controls/22/javafx-controls-22-sources.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-controls/22/javafx-controls-22-sources.jar!/" />
       <root url="jar://$USER_HOME$/.m2/repository/org/openjfx/javafx-graphics/22/javafx-graphics-22-sources.jar!/" />

@@ -1,70 +1,120 @@
 package models;
 
-/**
- * Used to calculate the score of throws with 5 dice
- */
+import java.util.Arrays;
+
 public class YatzyResultCalculator {
+    private final Die[] dice;
+    private final int[] counts = new int[7]; // indeks 1–6 bruges til at tælle øjne
 
-    /**
-     *
-     * @param dice
-     */
     public YatzyResultCalculator(Die[] dice) {
-        //TODO: implement YatzyResultCalculator constructor.
+        this.dice = dice;
+        countEyes();
     }
 
-    /**
-     * Calculates the score for Yatzy uppersection
-     * @param eyes eye value to calculate score for. eyes should be between 1 and 6
-     * @return the score for specified eye value
-     */
+    // hjælpemethod tæl hvor mange der er af hver øjenværdi
+    private void countEyes() {
+        Arrays.fill(counts, 0); //Nulstil counts arrayet
+        for (Die die : dice) {
+            counts[die.getEyes()]++;
+        }
+    }
+
+
+    //Summer alle terninger med den givne værdi
     public int upperSectionScore(int eyes) {
-        //TODO: Implement upperSectionScore method.
-        return 0;
+        if (eyes < 1 || eyes > 6) return 0;
+        return counts[eyes] * eyes;
     }
 
+
+    //Enkelt par – højeste par giver point (f.eks. 3,3,5,5 -> 10)
     public int onePairScore() {
-        //TODO: implement onePairScore method.
+        for (int i = 6; i >= 1; i--) {
+            if (counts[i] >= 2) return i * 2;
+        }
         return 0;
     }
 
+
+    // par – summen af begge par, ellers 0
     public int twoPairScore() {
-        //TODO: implement twoPairScore method.
+        int pairsFound = 0;
+        int score = 0;
+        for (int i = 6; i >= 1; i--) {
+            if (counts[i] >= 2) {
+                pairsFound++;
+                score += i * 2;
+                if (pairsFound == 2) return score;
+            }
+        }
         return 0;
     }
 
+
+    //Tre ens – summen af tre ens (kun tre af dem, selvom der er flere)
     public int threeOfAKindScore() {
-        //TODO: implement threeOfAKindScore method.
+        for (int i = 6; i >= 1; i--) {
+            if (counts[i] >= 3) return i * 3;
+        }
         return 0;
     }
 
+
+    //Fire ens – summen af fire ens (kun fire af dem, selvom der er flere)
     public int fourOfAKindScore() {
-        //TODO: implement fourOfAKindScore method.
+        for (int i = 6; i >= 1; i--) {
+            if (counts[i] >= 4) return i * 4;
+        }
         return 0;
     }
 
+
+    //Lille straight (1,2,3,4,5) = 15 point
     public int smallStraightScore() {
-        //TODO: implement smallStraightScore method.
-        return 0;
+        for (int i = 1; i <= 5; i++) {
+            if (counts[i] != 1) return 0;
+        }
+        return 15;
     }
 
+
+    //Stor straight (2,3,4,5,6) = 20 point
     public int largeStraightScore() {
-        //TODO: implement largeStraightScore method.
-        return 0;
+        for (int i = 2; i <= 6; i++) {
+            if (counts[i] != 1) return 0;
+        }
+        return 20;
     }
 
+
+    //Fuldt hus: 3 ens + 2 ens
     public int fullHouseScore() {
-        //TODO: implement fullHouseScore method.
+        int threeValue = 0;
+        int twoValue = 0;
+        for (int i = 1; i <= 6; i++) {
+            if (counts[i] == 3) threeValue = i;
+            else if (counts[i] == 2) twoValue = i;
+        }
+        if (threeValue > 0 && twoValue > 0) {
+            return threeValue * 3 + twoValue * 2;
+        }
         return 0;
     }
 
+    //Chance: summen af alle øjne
     public int chanceScore() {
-        //TODO: implement chanceScore method.
-        return 0;
+        int sum = 0;
+        for (int i = 1; i <= 6; i++) {
+            sum += counts[i] * i;
+        }
+        return sum;
     }
 
+    //Yatzy: 5 ens = 50 point
     public int yatzyScore() {
-        //TODO: implement yatzyScore method.
+        for (int i = 1; i <= 6; i++) {
+            if (counts[i] == 5) return 50;
+        }
         return 0;
     }
 }
