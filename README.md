@@ -39,7 +39,7 @@ Projektet er udarbejdet som svar til afleverings opgave 3 "Projekt 3 - Yatzy" i 
 
 For at gøre spillet let tilgængeligt i min web-app-portfolio, skal det deployes til web ved brug af JPro.
 
-**Problem:** JavaFX-projekt er lavet i IntelliJ, uden Maven-opsætning (JavaFX-biblioteker er tilføjet manuelt).
+**Problem:** JavaFX-projektet er lavet i IntelliJ, uden Maven-opsætning (JavaFX-biblioteker er tilføjet manuelt).
 For at JPro kan køre projektet, skal det gøres til et Maven-projekt og tilføjes de nødvendige afhængigheder.
 
 **Spil demo:** [LINK TIL KØRENDE WEB-VERSION HER (W.I.P)]
