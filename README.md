@@ -14,7 +14,7 @@ Projektet er struktureret efter **Model-View-Controller (MVC)**-designprincippet
 | Fil/Klasse | Ansvar | Demonstreret Færdighed |
 | :--- | :--- | :--- |
 | `YatzyResultCalculator.java` | Spillets kerne-logik. Håndterer pointberegning for alle 15 kombinationer (fra 1'ere til Yatzy, inkl. straight, fuldt hus osv.). | **Kompleks Algoritmeimplementering** og effektiv brug af **Arrays**. |
-| `YatzyGui.java` / `*Pane.java` | Den visuelle præsentation og brugerinteraktion (terningvisning, pointtavle og knapper). | Anvendelse af **JavaFX** til GUI-design og opbygning af layout. |
+| `YatzyGui.java` / `DicePane.java` / `ScorePane.java` | Den visuelle præsentation og brugerinteraktion (terningvisning, pointtavle og knapper). | Anvendelse af **JavaFX** til GUI-design og opbygning af layout. |
 | `YatzyController.java` | Koordinerer dataflowet: Tager input fra GUI'en og kalder den nødvendige logik, og opdaterer derefter GUI'en. | Sikring af adskillelse mellem **funktionalitet og brugergrænseflade (MVC)**. |
 
 ---
