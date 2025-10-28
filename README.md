@@ -39,4 +39,4 @@ Projektet er udarbejdet som svar til afleverings opgave 3 "Projekt 3 - Yatzy" i 
 
 For at gøre spillet let tilgængeligt i min portfolio, er det blevet deployet til web ved brug af JPro.
 
-**Spil demo:** [LINK TIL DIN KØRENDE WEB-VERSION HER]
+**Spil demo:** [LINK TIL KØRENDE WEB-VERSION HER (W.I.P)]
