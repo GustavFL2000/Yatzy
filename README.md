@@ -24,8 +24,8 @@ Projektet er struktureret efter **Model-View-Controller (MVC)**-designprincippet
 Projektet er udarbejdet som svar til afleverings opgave 3 "Projekt 3 - Yatzy" i Programering 1, på Datamatiker uddannelsen på Aarhus Erhvervsakadami. 
 
 * **Teknologi:** Java, JavaFX.
-* **Originalt Udgangspunkt:** Projektet blev forket fra et start-repository leveret af underviser **Benn Christensen**.
-* **Mit Bidrag:** Jeg har selvstændigt implementeret *al* spil-logik i `YatzyResultCalculator.java` (som verificeres af tests) og designet, udviklet og forbundet *hele* den interaktive JavaFX-brugerflade for at skabe den færdige desktop-applikation.
+* **Originalt Udgangspunkt:** Projektet blev forket fra et start-repository leveret af underviser Benn Christensen.
+* **Mit Bidrag:** Jeg har selvstændigt implementeret alt spil-logik i `YatzyResultCalculator.java` (som verificeres af tests) og designet, udviklet og forbundet hele den interaktive JavaFX-brugerflade for at skabe den færdige desktop-applikation.
 
 ## Hvordan kører man applikationen?
 
@@ -35,8 +35,11 @@ Projektet er udarbejdet som svar til afleverings opgave 3 "Projekt 3 - Yatzy" i 
 
 ---
 
-## Prøv Spillet i Din Browser (Web-version)
+## Prøv Spillet i Browser (Web-version) (W.I.P)
 
-For at gøre spillet let tilgængeligt i min portfolio, er det blevet deployet til web ved brug af JPro.
+For at gøre spillet let tilgængeligt i min web-app-portfolio, skal det deployes til web ved brug af JPro.
+
+**Problem:** JavaFX-projekt er lavet i IntelliJ, uden Maven-opsætning (JavaFX-biblioteker er tilføjet manuelt).
+For at JPro kan køre projektet, skal du gøre det til et Maven-projekt og tilføje de nødvendige afhængigheder.
 
 **Spil demo:** [LINK TIL KØRENDE WEB-VERSION HER (W.I.P)]
