@@ -91,6 +91,7 @@ public class ScorePane extends GridPane {
             }
         });
 
+        //Til bonus feltet, hvis man når 63 i sum før bonusen får ,man 50 ekstra point
         int bonus = (sum[0] >= 63) ? 50 : 0;
         total[0] += bonus;
 

@@ -16,7 +16,7 @@ public class YatzyGui extends Application {
         DicePane dicePane = new DicePane(controller);
         ScorePane scorePane = new ScorePane(controller);
 
-        // 🔗 Forbind controller med ScorePane
+        //Forbind controller med ScorePane
         controller.setScorePane(scorePane);
 
         root.setTop(dicePane);

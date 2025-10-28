@@ -20,7 +20,7 @@ public class YatzyResultCalculator {
     }
 
 
-    //Summer alle terninger med den givne værdi
+    //Sum af alle terninger med den givne værdi
     public int upperSectionScore(int eyes) {
         if (eyes < 1 || eyes > 6) return 0;
         return counts[eyes] * eyes;
