@@ -35,7 +35,7 @@ Projektet er udarbejdet som svar til afleverings opgave 3 "Projekt 3 - Yatzy" i 
 
 ---
 
-## 🔗 Prøv Spillet i Din Browser (Web-version)
+## Prøv Spillet i Din Browser (Web-version)
 
 For at gøre spillet let tilgængeligt i min portfolio, er det blevet deployet til web ved brug af JPro.
 
