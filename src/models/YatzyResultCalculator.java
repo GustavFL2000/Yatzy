@@ -117,4 +117,24 @@ public class YatzyResultCalculator {
         }
         return 0;
     }
+
+    public java.util.Map<String, Integer> getPossibleScores() {
+        java.util.Map<String, Integer> scores = new java.util.LinkedHashMap<>();
+        scores.put("1'ere", upperSectionScore(1));
+        scores.put("2'ere", upperSectionScore(2));
+        scores.put("3'ere", upperSectionScore(3));
+        scores.put("4'ere", upperSectionScore(4));
+        scores.put("5'ere", upperSectionScore(5));
+        scores.put("6'ere", upperSectionScore(6));
+        scores.put("Et par", onePairScore());
+        scores.put("To par", twoPairScore());
+        scores.put("3 ens", threeOfAKindScore());
+        scores.put("4 ens", fourOfAKindScore());
+        scores.put("Lille straight", smallStraightScore());
+        scores.put("Store straight", largeStraightScore());
+        scores.put("Fuldt hus", fullHouseScore());
+        scores.put("Chance", chanceScore());
+        scores.put("Yatzy", yatzyScore());
+        return scores;
+    }
 }

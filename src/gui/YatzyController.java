@@ -24,6 +24,12 @@ public class YatzyController {
             if (!held[i]) dice[i].roll();
         }
         rollsLeft--;
+
+        // Vis mulige scores
+        if (scorePane != null) {
+            YatzyResultCalculator calc = new YatzyResultCalculator(getDice());
+            scorePane.showPossibleScores(calc.getPossibleScores());
+        }
     }
 
     public int getRollsLeft() {
@@ -69,6 +75,7 @@ public class YatzyController {
         // Opdater Sum, Bonus og Total
         if (scorePane != null) {
             scorePane.updateTotals();
+            scorePane.clearPossibleScores();
         }
 
         // Nulstil kast

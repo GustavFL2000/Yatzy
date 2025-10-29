@@ -112,4 +112,23 @@ public class ScorePane extends GridPane {
                 .findFirst()
                 .orElse(null);
     }
+
+    public void showPossibleScores(java.util.Map<String, Integer> scores) {
+        getChildren().forEach(node -> {
+            if (node instanceof TextField field) {
+                String id = field.getId();
+                if (scores.containsKey(id)) {
+                    field.setPromptText(String.valueOf(scores.get(id)));
+                }
+            }
+        });
+    }
+
+    public void clearPossibleScores() {
+        getChildren().forEach(node -> {
+            if (node instanceof TextField field) {
+                field.setPromptText("");
+            }
+        });
+    }
 }
